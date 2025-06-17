@@ -57,9 +57,51 @@ int main()
     printf("%f\n\n", sumExplicitConversion); // 2.500000
     //Isso mostra a necessidade de atenção extra na hora de executar conversos de tipos de dados
 
-    // return 0; //Retorno usado para finalizar o programa;
+    x = 10; //Fazendo overwrite dos valores de x e y;
+    y = 5;
+    printf("%d\n", x + y);
+    printf("%d\n", x - y);
+    printf("%d\n", x * y);
+    printf("%d\n\n", x / y);
+    //Operações aritméticas básicas em C;
 
-    printf("Press any key to close...\n");
+    printf("%d\n", x % 2);
+    printf("%d\n", x++); //Incremento pós fixado
+    printf("%d\n", --x);
+    printf("%d\n\n", x--);
+    //Operação aritmética intermediária;
+
+    int testNumber = 10;
+    printf("Valor Original: %d\n", testNumber);
+    testNumber += 4;
+    printf("x += y é igual a x = x + y: %d\n", testNumber);
+    testNumber -= 2;
+    printf("x -= y é igual a x = x - y: %d\n", testNumber);
+    testNumber *= 10;
+    printf("x *= y é igual a x = x * y: %d\n", testNumber);
+    testNumber /= 2;
+    printf("x /= y é igual a x = x / y: %d\n\n", testNumber);
+    testNumber %= 2;
+    //Operações de Atribuções;
+
+    int testNumber2 = 15;
+    printf("O 0 é não.\nO 1 é sim!\n");
+    printf("O X é igual ao Y? %d\n", testNumber == testNumber2);
+    printf("O X é diferente do Y? %d\n", testNumber != testNumber2);
+    printf("O X é maior que Y? %d\n", testNumber > testNumber2);
+    printf("O X é menor do Y? %d\n", testNumber < testNumber2);
+    printf("O X é maior ou igual à Y? %d\n", testNumber >= testNumber2);
+    printf("O X é menor ou igual à Y? %d\n\n", testNumber <= testNumber2);
+    //Operações de Comparação;
+
+    printf("O X e o Y são maiores que 1? %d\n", testNumber > 1 && testNumber2 > 1);
+    printf("O X e o Y são menores que 100? %d\n", testNumber < 100 && testNumber2 < 100);
+    printf("O X e o Y são números negativos? %d\n\n", !(testNumber < 1 || testNumber2 < 1));
+    //Operadores Lógicos;
+
+    // return 0; //Retorno usado para finalizar o programa; //DEPRECATED: Versão 1 sem user input;
+
+    printf("Aperte qualquer tecla para fechar...\n"); 
     getchar();
-    return 0;
+    return 0; // Finalizando o programa versão 2: com user input para o terminal não apenas fechar sozinho;
 }
