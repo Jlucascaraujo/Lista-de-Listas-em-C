@@ -1,8 +1,10 @@
 // Arquivo de Treinamento em C
 #include <stdio.h> //Biblioteca, permite o uso de funções exclusivas, como printf();
+#include <locale.h>
 
 int main()
 {                                                          // Função principal;
+    setlocale(LC_ALL, "pt_BR");
     printf("Obi-Wan:\t \"Hello there!\"\n");               // Output com tab, aspas e quebra de linha;
     printf("General Grievous:\t \"General Kenobi!\"\n\n"); // Linha branca
 
@@ -98,6 +100,24 @@ int main()
     printf("O X e o Y são menores que 100? %d\n", testNumber < 100 && testNumber2 < 100);
     printf("O X e o Y são números negativos? %d\n\n", !(testNumber < 1 || testNumber2 < 1));
     //Operadores Lógicos;
+
+    if (testNumber == testNumber2)
+    {
+        printf("Os números X e Y são iguais!\n\n");
+    } else {
+        printf("Os números X e Y não são iguais!\n\n");
+    }
+    
+    if (testNumber > testNumber2)
+    {
+        printf("X é maior que Y\n\n");
+    } else if (testNumber < testNumber2)
+    {
+        printf("X é menor que Y\n\n");
+    } else {
+        printf("ERROR X001\n\n");
+    }
+    //
 
     // return 0; //Retorno usado para finalizar o programa; //DEPRECATED: Versão 1 sem user input;
 
