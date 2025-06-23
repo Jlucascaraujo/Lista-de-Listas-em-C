@@ -117,7 +117,38 @@ int main()
     } else {
         printf("ERROR X001\n\n");
     }
-    //
+    // Condicionais if e else simples
+
+    (testNumber2 > testNumber) ? printf("Good day.") : printf("Good evening.");
+    //Condicionais if, else forma resumida
+
+    int diaDaSemana = 7;
+    switch (diaDaSemana)
+    {        
+    case 1:
+        printf("A case of the mondays!");
+        break;
+    case 2:
+        printf("Well, if it isn't Tuesday, my mortal enemy...");
+    case 3:
+        printf("ITS WEDNESDAY, MY DUDES!");
+    case 4:
+        printf("Thursday is the evil twin of my mortal enemy.");
+    case 5:
+        printf("It's Friday then,");
+    case 6:
+        printf("there's Saturday,");
+    case 7:
+        printf("Sunday what??");
+    default:
+        printf("MUFASA! MUFASA! MUFASA!");
+        break;
+    }
+    //Condicional Switch Básico com o operador BREAK
+
+    int ary[4] = {1, 2, 3, 4};
+    printf("%d\n", *ary);
+    // Testando atividade: "Qual será a saída do seguinte código C?" Alternativas: 1) 1. 2) Runtime error 3) Algum valor de lixo 4) Variável indefinida. Resposta Correta: 1) 1. 
 
     // return 0; //Retorno usado para finalizar o programa; //DEPRECATED: Versão 1 sem user input;
 
